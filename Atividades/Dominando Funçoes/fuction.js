@@ -226,3 +226,57 @@ pessoa.fullName();
   função                Objeto global
   Evento               Elemento que recebeu o evento
  */
+
+// MANIPULANDO O VALOR DO THIS
+//call
+/*const pessoa = {
+    nome: 'Miguel';
+};
+
+const animal = {
+    nome: 'Murphy'
+};
+function getSomethings(){
+    console.log(this.nome)
+}
+getSomething call(animal);
+
+é possível passar parametros para essa função separando-os por virgula:
+
+const myObj = {
+    num1: 2,
+    num2: 4,
+};
+function soma(a, b){
+    console.log(this.num1 + this.num2 + a + b);
+}
+soma.call(myObj, 1, 5);
+//12
+
+// APPLY
+é possivel passar parametros para essa função dentro de um array.
+
+ex:
+const myObj = {
+    num1: 2,
+    num2: 4,
+};
+
+function soma(a, b){
+    console.log(this.num1 + this.num2 + a + b);
+}
+
+soma.apply(myObj, [1, 5]);
+//12
+
+//BIND 
+clona a estrtura da funçao onde é chamda e aplica o valor do objeto passado como parametro.
+
+ex: 
+const retornaNomes = funcion(){
+    return this.nome
+};
+let bruno = retornaNomes.blind({nome: 'Bruno});
+bruno();
+//bruno
+*/
